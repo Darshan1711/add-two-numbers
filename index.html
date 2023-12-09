@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Addition</title>
+    </head>
+    <body>
+        <h1>Addition Calculator</h1>
+        Enter the first number: <input type="text" id="f1"><br><br>
+        Enter the second number: <input type="text" id="f2"><br><br>
+        <button onclick="adi()">Calculate sum</button>
+        <p id="s1"></p>
+
+        <script>
+            function adi(){
+            var pl = parseInt(document.getElementById("f1").value);
+            var mn = parseInt(document.getElementById("f2").value);
+            var final = pl + mn;
+            document.getElementById("s1").innerHTML ="The sum of first number and second number is " + final;
+        }
+        </script>
+
+    </body>
+    </html>
+</body>
+</html>
